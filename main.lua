@@ -10,7 +10,7 @@ function love.load()
 end
 
 function love.run()
-    love.graphics.setCaption("Soul Keeper - GDP #4")
+    love.window.setTitle("Soul Keeper - GDP #4")
     -- The main function
     while game.state ~= GameState.QUITTING do
         -- Process events.
@@ -51,6 +51,7 @@ end
 
 function love.draw()
     game:draw()
+    love.graphics.print(game.menu.str, 10, 200)
 end
 
 -- The main loop update which take care of updating
@@ -70,7 +71,7 @@ function love.keypressed(key, unicode)
 	end
 end
 
-function love.mousereleased(x, y, button)
+function love.mousereleased(x, y, button, isTouch)
 	game:mousereleased(x, y, button)
 end
 

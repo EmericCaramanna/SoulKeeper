@@ -31,7 +31,7 @@ function PiegeManager.new()
 end
 -- click event for traps
 function PiegeManager:mousereleased(x, y, button)
-    if button == 'l' then
+    if button == 1 then
 		local caseX, caseY = Game.level:getCase(x), Game.level:getCase(y)
         if self.currentPiege ~= nil and game.soulCollected >= self.currentPiege.soulNeeded then
             if (Game.level.zone[caseY+1][caseX+1] == 1 and self.currentPiege ~= nil) then

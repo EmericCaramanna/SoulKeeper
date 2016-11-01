@@ -34,6 +34,7 @@ Game = {
 	started = 0,
 
 	point = 0,
+    str = "",
 }
 
 function Game:createdLevel(difficult)

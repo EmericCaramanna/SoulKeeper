@@ -84,7 +84,7 @@ function Minimenu:update(delta)
 end
 
 function Minimenu:mousereleased(x, y, button)
-	 if button == 'l' then
+	 if button == 1 then
 	    	   for k, item in ipairs(self.traps) do
 		       if item[2] <= x and item[4] >= x and item[3] <= y and item[5] >= y then
                 if item[7] ~= nil then
