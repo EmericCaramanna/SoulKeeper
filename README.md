@@ -1,1 +1,2 @@
-# SoulKeeper Lua Version for GDP #4
+# SoulKeeper
+SoulKeeper Lua Version for GDP #4 (2013)
